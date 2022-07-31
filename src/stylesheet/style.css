@@ -1,0 +1,166 @@
+
+/* General styling
+=============== */
+
+:root {
+    --black:rgb(0,0,0);
+    --white:rgb(251,251,251);
+    --gray:#BFC0C0;
+}
+
+.page-wrapper {
+    max-width:1250px;
+    margin:0 auto;
+    position: relative;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+};
+
+.p-1 {
+    padding:1.5rem;
+}
+
+.p-2 {
+    padding:2rem;
+}
+
+.p-3 {
+    padding:2.5rem;
+}
+
+.p-4 {
+    padding:4rem;
+}
+
+/* Grid 
+=============== */
+
+.grid-decoration {
+    height:100vh;
+    width:1px;
+    z-index:10;
+    background-color: white;
+    opacity: 0.1;
+    position:fixed;
+    top:0;
+}
+
+.grid-decoration:nth-child(1) {
+    margin-left:25%;
+}
+
+.grid-decoration:nth-child(2) {
+    margin-left:50%;
+}
+
+.grid-decoration:nth-child(3) {
+    margin-left:75%;
+}
+
+/* Nav
+=============== */
+
+.nav {
+    position: sticky;
+    max-width: 1250px;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-inner {
+    display:inline-flex;
+    justify-content: end;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.nav__text {
+    animation: textSlideIn 1000ms ease-out;
+}
+
+.nav__text::before{
+    content:'Bienvenue';
+    animation: textChanging1 20s infinite;
+}
+
+
+.nav__menu-btn {
+    height:15px;
+    width:15px;
+    outline:none;
+    border:none;
+    background-color: white;
+}
+
+/* Hero
+=============== */
+
+.hero-content__text {
+    font-size:4rem;
+    color:white;
+    margin-bottom: 4rem;
+    animation: textSlideIn 1000ms ease-out;
+}
+
+.hero-content__text--gray {
+    color:var(--gray);
+}
+
+.hero-content-links__link {
+    font-size:2.5rem;
+    letter-spacing: 3px;
+    transition: 400ms ease-in-out;
+    animation: textSlideIn 1000ms ease-out;
+}
+
+.hero-content-links__link:hover {
+    transition: 600ms ease-in-out;
+    letter-spacing: 7px;
+    /*animation: letter-spacing 2s ease-in-out;
+    animation-fill-mode: forwards;*/
+}
+
+.hero-content-links__link-decoration {
+    font-size:1.2rem;
+    color:var(--white);
+    opacity: 0.3;
+}
+
+.hero-footer__links {
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+@keyframes letter-spacing {
+    0% {letter-spacing: normal;}
+    100%{letter-spacing: 5px;}
+}
+
+@keyframes textSlideIn {
+    0%{transform:translateX(-15%);opacity:0}
+    100%{transform:translateX(0%);opacity:1}
+}
+
+@keyframes textChanging1 {
+    0%{opacity:1;content:'Bienvenue'}
+    23%{opacity:1;color:white}
+    28%{opacity:0;color:white;content:'Bienvenue'}/*transform: translateX(-1000%);*/
+    29%{opacity:0;content:'Welcome'}
+    33%{opacity:1;content:'Welcome';}
+    56%{opacity:1;}
+    61%{opacity:0;content:'Welcome'}
+    62%{opacity:0;content:'Bienvenido'}
+    66%{opacity:1;}
+    89%{opacity:1;content:'Bienvenido'}
+    94%{opacity:0;content:'Bienvenido'}
+    95%{opacity:0;content:'Bienvenue'}
+    100%{opacity:1;content:'Bienvenue';}
+    /*90%{opacity:1;transform: translateX(0%);}
+    95%{opacity:0;transform: translateX(-100%);}
+    100%{opacity:1;transform: translateX(0%);content:'Bienvenue'}*/
+}
