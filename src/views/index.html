@@ -12,7 +12,6 @@
     <title>Kilian Nagel</title>
 </head>
 <body>
-    <div class="page-wrapper">
         <div class="grid-decoration"></div>
         <div class="grid-decoration"></div>
         <div class="grid-decoration"></div>
@@ -27,11 +26,18 @@
             <div class="hero-content">
                 <h1 class="hero-content__text">Kilian<br><span class="hero-content__text--gray">Nagel</span></h1>
                 <div class="hero-content-links">
-                    <p class="hero-content-links__link">About me <span class="hero-content-links__link-decoration">001</span></p>
-                    <p class="hero-content-links__link">Projets <span class="hero-content-links__link-decoration">002</span></p>
-                    <p class="hero-content-links__link">Compétences <span class="hero-content-links__link-decoration">003</span></p>
-                    <p class="hero-content-links__link">Contact <span class="hero-content-links__link-decoration">004</span></p>
+                    <p class="hero-content-links__link">About me</p>
+                    <p class="hero-content-links__link">Projets</p>
+                    <p class="hero-content-links__link">Compétences</p>
+                    <p class="hero-content-links__link">Contact</p>
                 </div>
+            </div>
+            <div class="hero-video-wrapper">
+                <video playsinline autoplay muted loop poster="cake.jpg">
+                  <source src="" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="hero-video-wrapper-video"></div>
             </div>
         </section>
 
@@ -47,59 +53,109 @@
 
         <section class="projects section">
             <h2 class="projects__title title">Projects</h2>
-            <div class="projects-container-desktop">
-                <div class="projects-content container">
-                    <h3 class="projects-content__title subtitle">Recipes App</h3>
-                    <p class="projects-content__desc text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, animi perferendis facilis sed praesentium facere quo molestias dolor. Vel fugit voluptatem nam eum a est illo dolor laboriosam odio optio.</p>
-                    <div class="projects-content-skills">
-                        <span class="projects-content-skills__skill">React</span>
-                        <span class="projects-content-skills__skill">Node.js</span>
-                        <span class="projects-content-skills__skill">Express</span>
-                    </div>
-                </div>
-                <div class="projects-preview">
-                    <span class="projects-preview__previous-btn"></span>
-                    <div class="projects-preview__img"></div>
-                    <span class="projects-preview__next-btn"></span>
-                </div>
-            </div>
-
-            <div class="projects-container-sm">
-                <div class="projects-container-project">
-                    <div class="projects-content container">
-                        <h3 class="projects-content__title subtitle">Recipes App</h3>
-                        <p class="projects-content__desc text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, animi perferendis facilis sed praesentium facere quo molestias dolor. Vel fugit voluptatem nam eum a est illo dolor laboriosam odio optio.</p>
-                        <div class="projects-content-skills">
-                            <span class="projects-content-skills__skill">React</span>
-                            <span class="projects-content-skills__skill">Node.js</span>
-                            <span class="projects-content-skills__skill">Express</span>
+            <div class="projects-preview">
+                <div class="projects-preview-container">
+                    <div class="projects-preview-container-content">
+                        <h3 class="projects-preview-container__subtitle subtitle">Recipes App</h3>
+                        <p class="projects-preview-container__desc">Application permettant l'affichage de nombreuses recettes. Il est possible d'intéragir avec ces recettes et de les ajouter en favoris.</p>
+                        <div class="projects-preview-container-skills">
+                            <div class="projects-preview-container-skills__skill">node.js</div>
+                            <div class="projects-preview-container-skills__skill">react.js</div>
+                            <div class="projects-preview-container-skills__skill">express</div>
                         </div>
                     </div>
-                    <div class="projects-content-preview">
-                        <span class="projects-content-preview__previous-btn"></span>
-                        <div class="projects-content-preview__img"></div>
-                        <span class="projects-content-preview__next-btn"></span>
-                    </div>
-                </div>
-                <div class="projects-container-project">
-                    <div class="projects-content container">
-                        <h3 class="projects-content__title subtitle">Recipes App</h3>
-                        <p class="projects-content__desc text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, animi perferendis facilis sed praesentium facere quo molestias dolor. Vel fugit voluptatem nam eum a est illo dolor laboriosam odio optio.</p>
-                        <div class="projects-content-skills">
-                            <span class="projects-content-skills__skill">React</span>
-                            <span class="projects-content-skills__skill">Node.js</span>
-                            <span class="projects-content-skills__skill">Express</span>
+                    <div class="projects-preview-container-links">
+                        <hr><br>
+                        <div class="projects-preview-container-btn-list">
+                            <span class="projects-preview-container-btn-list__btn">live project</span>
+                            <span class="projects-preview-container-btn-list__btn">repo</span>
                         </div>
                     </div>
-                    <div class="projects-content-preview">
-                        <span class="projects-content-preview__previous-btn"></span>
-                        <div class="projects-content-preview__img"></div>
-                        <span class="projects-content-preview__next-btn"></span>
+                </div>
+                <div class="projects-preview-container">
+                    <div class="projects-preview-container-content">
+                        <h3 class="projects-preview-container__subtitle subtitle">Forum</h3>
+                        <p class="projects-preview-container__desc">Site qui présente un jeu 'Light fight of darkness'. Le site dispose d'un login , forum et présente les features du jeu.</p>
+                        <div class="projects-preview-container-skills">
+                            <div class="projects-preview-container-skills__skill">node.js</div>
+                            <div class="projects-preview-container-skills__skill">react.js</div>
+                            <div class="projects-preview-container-skills__skill">express</div>
+                        </div>
+                    </div>
+                    <div class="projects-preview-container-links">
+                        <hr><br>
+                        <div class="projects-preview-container-btn-list">
+                            <span class="projects-preview-container-btn-list__btn">live project</span>
+                            <span class="projects-preview-container-btn-list__btn">repo</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
+                <div class="projects-preview-container">
+                    <div class="projects-preview-container-content">
+                        <h3 class="projects-preview-container__subtitle subtitle">Docs</h3>
+                        <p class="projects-preview-container__desc">Site qui présente les features d'un site de documentation. 'Docs'</p>
+                        <div class="projects-preview-container-skills">
+                            <div class="projects-preview-container-skills__skill">node.js</div>
+                            <div class="projects-preview-container-skills__skill">react.js</div>
+                            <div class="projects-preview-container-skills__skill">express</div>
+                        </div>
+                    </div>
+                    <div class="projects-preview-container-links">
+                        <hr><br>
+                        <div class="projects-preview-container-btn-list">
+                            <span class="projects-preview-container-btn-list__btn">live project</span>
+                            <span class="projects-preview-container-btn-list__btn">repo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-preview-container">
+                    <div class="projects-preview-container-content">
+                        <h3 class="projects-preview-container__subtitle subtitle">Message App</h3>
+                        <p class="projects-preview-container__desc">Simple application de messagerie. Permettant l'envoie de messages , l'ajout d'amis et création de groupes.</p>
+                        <div class="projects-preview-container-skills">
+                            <div class="projects-preview-container-skills__skill">node.js</div>
+                            <div class="projects-preview-container-skills__skill">react.js</div>
+                            <div class="projects-preview-container-skills__skill">express</div>
+                        </div>
+                    </div>
+                    <div class="projects-preview-container-links">
+                        <hr><br>
+                        <div class="projects-preview-container-btn-list">
+                            <span class="projects-preview-container-btn-list__btn">live project</span>
+                            <span class="projects-preview-container-btn-list__btn">repo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
-    </div>
+
+        <section class="skills section">
+            <h2 class="skills__title title">Skills</h2>
+            <div class="skills-preview">
+                <div class="skills-preview-container">
+                    <h3 class="skills-preview-container__subtitle subtitle">Web</h3>
+                    <div class="skills-preview-container-skills">
+                        <p class="skills-preview-container-skills__skill">Html</p>
+                        <p class="skills-preview-container-skills__skill">Css</p>
+                        <p class="skills-preview-container-skills__skill">Javascript</p>
+                        <p class="skills-preview-container-skills__skill">React</p>
+                        <p class="skills-preview-container-skills__skill">Sass</p>
+                    </div>
+                </div>
+                <div class="skills-preview-container">
+                    <h3 class="skills-preview-container__subtitle subtitle">Development</h3>
+                    <div class="skills-preview-container-skills">
+                        <p class="skills-preview-container-skills__skill">Git/Github</p>
+                    </div>
+                </div>
+                <div class="skills-preview-container">
+                    <h3 class="skills-preview-container__subtitle subtitle">Other</h3>
+                    <div class="skills-preview-container-skills">
+                        <p class="skills-preview-container-skills__skill">Figma</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
 </body>
 </html>
