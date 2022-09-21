@@ -145,7 +145,6 @@ body {
     padding:var(--padding-600);
     height:min(800px,100vh);
     margin-bottom: var(--padding-xl);
-    background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url('../res/home.jpg') center/cover;
     position: relative;
     max-width: 100%;
 }
